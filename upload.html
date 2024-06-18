@@ -54,8 +54,43 @@
         </nav>
     </header>
 
-    <main>
-        
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Profile</h2>
+                <p class="text-muted">This information will be displayed publicly so be careful what you share.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text">workcation.com/</span>
+                            <input type="text" class="form-control" id="username" placeholder="janesmith">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="about" class="form-label">About</label>
+                        <textarea class="form-control" id="about" rows="3" placeholder="Write a few sentences about yourself."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo" class="form-label">Photo</label>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/50" alt="Profile Photo" class="rounded-circle me-3">
+                            <button type="button" class="btn btn-secondary">Change</button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cover-photo" class="form-label">Cover photo</label>
+                        <div class="border p-3 text-center">
+                            <div class="mb-2">
+                                <img src="https://via.placeholder.com/150" alt="Cover Photo" class="img-fluid">
+                            </div>
+                            <button type="button" class="btn btn-primary">Upload a file</button>
+                            <p class="text-muted mt-2">PNG, JPG, GIF up to 10MB</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer></footer>
