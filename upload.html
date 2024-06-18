@@ -54,29 +54,29 @@
         </nav>
     </header>
 
-    <main class="container mt-5">
+    <main class="container mt-5 vh-100">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h2>Profile</h2>
-                <p class="text-muted">This information will be displayed publicly so be careful what you share.</p>
+                <h2>Upload project to OSS Hub</h2>
+                <p class="text-muted">Fill out the following information to get your project on the platform.</p>
                 <form>
                     <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <div class="input-group">
-                            <span class="input-group-text">workcation.com/</span>
-                            <input type="text" class="form-control" id="username" placeholder="janesmith">
-                        </div>
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="username" placeholder="ex: Novel">
                     </div>
                     <div class="mb-3">
-                        <label for="about" class="form-label">About</label>
-                        <textarea class="form-control" id="about" rows="3" placeholder="Write a few sentences about yourself."></textarea>
+                        <label for="url" class="form-label">URL to Site</label>
+                        <input type="text" class="form-control" id="username" placeholder="ex: https://novel.sh">
                     </div>
                     <div class="mb-3">
-                        <label for="photo" class="form-label">Photo</label>
-                        <div class="d-flex align-items-center">
-                            <img src="https://via.placeholder.com/50" alt="Profile Photo" class="rounded-circle me-3">
-                            <button type="button" class="btn btn-secondary">Change</button>
-                        </div>
+                        <label for="giturl" class="form-label">GitHub URL</label>
+                        <input type="text" class="form-control" id="username"
+                            placeholder="ex: https://github.com/steven-tey/novel">
+                    </div>
+                    <div class="mb-3">
+                        <label for="about" class="form-label">About the project</label>
+                        <textarea class="form-control" id="about" rows="3"
+                            placeholder="Write a few sentences about the project. Include the stack and languages used."></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="cover-photo" class="form-label">Cover photo</label>
@@ -84,16 +84,22 @@
                             <div class="mb-2">
                                 <img src="https://via.placeholder.com/150" alt="Cover Photo" class="img-fluid">
                             </div>
-                            <button type="button" class="btn btn-primary">Upload a file</button>
+                            <button type="button" class="btn btn-outline-secondary">Upload a file</button>
                             <p class="text-muted mt-2">PNG, JPG, GIF up to 10MB</p>
                         </div>
                     </div>
+
+                    <button type="submit" class="btn btn-primary float-end">Submit</button>
                 </form>
             </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+        <div class="container">
+            <span class="text-body-secondary">&copy; Chris Abdo - June 18 2024</span>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
