@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">OSS Hub</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,10 +36,8 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="upload.html">Upload project</a></li>
                                 <li><a class="dropdown-item" href="explore.html">Explore projects</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                
+                                
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -73,8 +71,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Crowdsourced</h5>
-                            <p class="card-text">Projects that are built and maintained by a community of contributors.
-                            </p>
+                            <p class="card-text">Projects that are built and maintained by a community of contributors.</p>
+                            <img src="assets/users.svg" alt="Users Icon" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -83,6 +81,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Active Contributors</h5>
                             <p class="card-text">Join a project with a vibrant community of active contributors.</p>
+                            <img src="assets/square-terminal.svg" alt="Square Terminal Icon" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -91,6 +90,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Potential Jobs</h5>
                             <p class="card-text">Contributing to open source projects can lead to job opportunities.</p>
+                            <img src="assets/circle-dollar-sign.svg" alt="Dollar Sign Icon" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -99,9 +99,9 @@
         </div>
     </main>
 
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container">
-            <span class="text-body-secondary">&copy; Chris Abdo - June 18 2024</span>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; Chris Abdo - June 18 2024</span>
         </div>
     </footer>
 
