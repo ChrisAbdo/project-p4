@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
             <div class="container-fluid">
@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link text-black" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link text-black" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
@@ -36,85 +36,82 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="upload.html">Upload project</a></li>
                                 <li><a class="dropdown-item" href="explore.html">Explore projects</a></li>
-                                
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="smart-search.html">Search</a>
+                            <a class="nav-link text-black" aria-current="page" href="smart-search.html">Search</a>
                         </li>
-                       
                     </ul>
                     <div class="d-flex">
                         <input class="form-control me-2" placeholder="Search projects..." aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Login</button>
-                        </form>
+                       <button class="btn btn-primary" type="submit">Login</button>
                     </div>
                 </div>
         </nav>
     </header>
 
-    <main class="container-fluid">
+    <div class="container-fluid flex-grow-1">
         <div class="row">
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse vh-100">
                 <div class="position-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
+                            <a class="nav-link text-black" aria-current="page" href="#">
                                 Live Cases
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 AI
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Startups
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 E-commerce
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Blog
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Image Galleries
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Video Galleries
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Portfolio
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Forms
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Admin
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Web Apps
                             </a>
                         </li>
                         <li class="nav-item d-md-none">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link text-black" href="#">
                                 Scroll down to close sidebar &darr;
                             </a>
                         </li>
@@ -124,7 +121,7 @@
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Recently Uploaded Projects</h1>
+                    <h1 class="h2 text-primary">Recently Uploaded Projects</h1>
                     <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                         Toggle Sidebar
                     </button>
@@ -162,10 +159,15 @@
                 </div>
             </main>
         </div>
-    </main>
+    </div>
 
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
-        <div class="container">
+    <div class="mb-5" />
+    <div class="mb-5" />
+    <div class="mb-5" />
+    <div class="mb-5" />
+
+    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom border-top">
+        <div class="container p-3">
             <span class="text-body-secondary">&copy; Chris Abdo - June 18 2024</span>
         </div>
     </footer>

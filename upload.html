@@ -10,7 +10,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
             <div class="container-fluid">
@@ -36,7 +36,6 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="upload.html">Upload project</a></li>
                                 <li><a class="dropdown-item" href="explore.html">Explore projects</a></li>
-                               
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -45,17 +44,16 @@
                     </ul>
                     <div class="d-flex">
                         <input class="form-control me-2" placeholder="Search projects..." aria-label="Search">
-                        <button class="btn btn-dark" type="submit">Login</button>
-                        </form>
+                       <button class="btn btn-primary" type="submit">Login</button>
                     </div>
                 </div>
         </nav>
     </header>
 
-    <main class="container mt-5 vh-100">
+    <main class="container mt-5 flex-grow-1">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <h2>Upload project to OSS Hub</h2>
+                <h2 class="text-primary">Upload project to OSS Hub</h2>
                 <p class="text-muted">Fill out the following information to get your project on the platform.</p>
                 <form>
                     <div class="mb-3">
@@ -93,9 +91,16 @@
         </div>
     </main>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <span class="mb-3 mb-md-0 text-body-secondary">&copy; Chris Abdo - June 18 2024</span>
+    <div class="mb-5" />
+    <div class="mb-5" />
+    <div class="mb-5" />
+    <div class="mb-5" />
+
+    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom border-top">
+        <div class="container p-1">
+            <div class="p-2">
+                &copy; Chris Abdo - June 18 2024
+            </div>
         </div>
     </footer>
 
